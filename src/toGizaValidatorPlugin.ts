@@ -21,7 +21,7 @@ import {
 } from "viem/account-abstraction"
 import { toAccount } from "viem/accounts"
 import { getChainId, signMessage } from "viem/actions"
-import { kernelVersionRangeToValidator } from "./constants.js"
+import { kernelVersionRangeToValidator } from "./constants"
 
 export const getValidatorAddress = <
     entryPointVersion extends EntryPointVersion

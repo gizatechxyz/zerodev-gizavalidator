@@ -1,27 +1,46 @@
 {
-  "name": "zerodev-gizavalidator",
+  "name": "@gizatechxyz/zerodev-gizavalidator",
   "version": "1.0.0",
   "description": "Giza validator plugin for ZeroDev",
+  "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "dev": "pnpm build --watch",
+		"build": "tsup",
     "prepublishOnly": "pnpm build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test-imports.cjs && node test/test-imports.mjs"
   },
-  "keywords": [],
+  "keywords": [
+    "zerodev",
+    "giza",
+    "validator",
+    "ethereum",
+    "web3"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.6.2",
   "dependencies": {
     "@zerodev/sdk": "^5.4.34",
-    "viem": "^2.29.2"
+    "abitype": "^1.0.8",
+    "tsup": "^8.4.0",
+    "viem": "2.28.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.17",
     "typescript": "^5.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/zerodev-gizavalidator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/zerodev-gizavalidator/issues"
+  },
+  "homepage": "https://github.com/yourusername/zerodev-gizavalidator#readme"
 }

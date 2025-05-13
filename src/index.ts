@@ -2,7 +2,7 @@ import type { KernelValidator } from "@zerodev/sdk/types"
 import {
     getValidatorAddress,
     signerToGizaValidator
-} from "./toGizaValidatorPlugin.js"
+} from "./toGizaValidatorPlugin"
 
 export { getValidatorAddress, signerToGizaValidator, type KernelValidator }
-export * from "./constants.js"
+export * from "./constants"
